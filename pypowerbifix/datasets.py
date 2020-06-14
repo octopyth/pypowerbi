@@ -1,7 +1,7 @@
 # -*- coding: future_fstrings -*-
 import requests
 import json
-from pypowerbi.utils import convert_datetime_fields
+from pypowerbifix.utils import convert_datetime_fields
 
 from requests.exceptions import HTTPError
 from .dataset import *

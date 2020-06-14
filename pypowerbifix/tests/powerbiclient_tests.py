@@ -5,14 +5,14 @@ import datetime
 import time
 from unittest import TestCase
 
-from pypowerbi.client import *
-from pypowerbi.reports import *
-from pypowerbi.report import *
-from pypowerbi.datasets import *
-from pypowerbi.dataset import *
-from pypowerbi.imports import *
-from pypowerbi.import_class import *
-from pypowerbi.tests.settings import PowerBITestSettings
+from pypowerbifix.client import *
+from pypowerbifix.reports import *
+from pypowerbifix.report import *
+from pypowerbifix.datasets import *
+from pypowerbifix.dataset import *
+from pypowerbifix.imports import *
+from pypowerbifix.import_class import *
+from pypowerbifix.tests.settings import PowerBITestSettings
 
 
 class PowerBIAPITests(TestCase):

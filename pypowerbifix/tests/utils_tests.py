@@ -5,7 +5,7 @@ from unittest import TestCase
 
 import datetime
 
-from pypowerbi import utils
+from pypowerbifix import utils
 
 class UtilsTests(TestCase):
     def test_date_from_powerbi_str(self):

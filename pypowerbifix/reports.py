@@ -3,8 +3,8 @@ import requests
 import json
 from requests.exceptions import HTTPError
 
-import pypowerbi.client
-from pypowerbi.report import Report
+import pypowerbifix.client
+from pypowerbifix.report import Report
 
 
 class Reports:
@@ -200,7 +200,7 @@ class Reports:
         # form the headers
         headers = self.client.auth_header
         # form the json
-        json_dict = pypowerbi.client.TokenRequestEncoder().default(token_request)
+        json_dict = pypowerbifix.client.TokenRequestEncoder().default(token_request)
 
         # get the response
         response = requests.post(url, headers=headers, json=json_dict)
@@ -209,7 +209,7 @@ class Reports:
         if response.status_code != 200:
             raise HTTPError(response, f'Generate token for report request returned http error: {response.json()}')
 
-        return pypowerbi.client.EmbedToken.from_dict(json.loads(response.text))
+        return pypowerbifix.client.EmbedToken.from_dict(json.loads(response.text))
 
     @classmethod
     def reports_from_get_reports_response(cls, response):

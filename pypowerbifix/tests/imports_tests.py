@@ -4,4 +4,4 @@ import json
 from unittest import TestCase
 
 
-from pypowerbi.imports import *
+from pypowerbifix.imports import *

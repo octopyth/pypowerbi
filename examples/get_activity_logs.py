@@ -1,5 +1,5 @@
-from pypowerbi.client import PowerBIClient
-from pypowerbi.activity_logs import ActivityLogs
+from pypowerbifix.client import PowerBIClient
+from pypowerbifix.activity_logs import ActivityLogs
 from datetime import datetime
 
 import pandas as pd

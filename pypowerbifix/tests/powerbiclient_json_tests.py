@@ -3,7 +3,7 @@
 import json
 from unittest import TestCase
 
-from pypowerbi.client import *
+from pypowerbifix.client import *
 
 
 class PowerBIClientJSONTests(TestCase):
